@@ -19,12 +19,8 @@
 
 @property (nonatomic,weak)id <DDWaterFolwViewDelegate> delegate;
 
-/**
- *  刷新数据源的方法
- */
+   刷新数据源的方法
 - (void)reloadData;
-/**
- *  根据标识向缓存池中取出可以复用的cell
- */
+ 根据标识向缓存池中取出可以复用的cell
 - (id)dequeueReusableCellWithIdentifier:(NSString *)identifier;
 
