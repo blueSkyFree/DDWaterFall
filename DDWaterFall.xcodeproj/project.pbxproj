@@ -14,6 +14,9 @@
 		880B81E71BDB4BB100CB86D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880B81E61BDB4BB100CB86D8 /* Images.xcassets */; };
 		880B81EA1BDB4BB100CB86D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880B81E81BDB4BB100CB86D8 /* LaunchScreen.xib */; };
 		880B81F61BDB4BB100CB86D8 /* DDWaterFallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B81F51BDB4BB100CB86D8 /* DDWaterFallTests.m */; };
+		880B820B1BDB4E6E00CB86D8 /* DDWaterFolwView.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B820A1BDB4E6E00CB86D8 /* DDWaterFolwView.m */; };
+		880B820E1BDB4E8D00CB86D8 /* DDWaterFlowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B820D1BDB4E8D00CB86D8 /* DDWaterFlowViewCell.m */; };
+		885DD9741BDB709300290790 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 885DD9731BDB709300290790 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,13 @@
 		880B81EF1BDB4BB100CB86D8 /* DDWaterFallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDWaterFallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		880B81F41BDB4BB100CB86D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		880B81F51BDB4BB100CB86D8 /* DDWaterFallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDWaterFallTests.m; sourceTree = "<group>"; };
+		880B82091BDB4E6E00CB86D8 /* DDWaterFolwView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDWaterFolwView.h; sourceTree = "<group>"; };
+		880B820A1BDB4E6E00CB86D8 /* DDWaterFolwView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDWaterFolwView.m; sourceTree = "<group>"; };
+		880B820C1BDB4E8D00CB86D8 /* DDWaterFlowViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDWaterFlowViewCell.h; sourceTree = "<group>"; };
+		880B820D1BDB4E8D00CB86D8 /* DDWaterFlowViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDWaterFlowViewCell.m; sourceTree = "<group>"; };
+		885DD9721BDB709300290790 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		885DD9731BDB709300290790 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		885DD9751BDB70D200290790 /* DDpch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDpch.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,11 @@
 		880B81D81BDB4BB100CB86D8 /* DDWaterFall */ = {
 			isa = PBXGroup;
 			children = (
+				885DD9721BDB709300290790 /* UIView+Extension.h */,
+				885DD9731BDB709300290790 /* UIView+Extension.m */,
+				885DD9751BDB70D200290790 /* DDpch.pch */,
+				880B820F1BDB5A7F00CB86D8 /* Lib */,
+				880B82081BDB4D9B00CB86D8 /* WaterFull[瀑布流] */,
 				880B81DD1BDB4BB100CB86D8 /* AppDelegate.h */,
 				880B81DE1BDB4BB100CB86D8 /* AppDelegate.m */,
 				880B81E01BDB4BB100CB86D8 /* ViewController.h */,
@@ -117,6 +132,25 @@
 				880B81F41BDB4BB100CB86D8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		880B82081BDB4D9B00CB86D8 /* WaterFull[瀑布流] */ = {
+			isa = PBXGroup;
+			children = (
+				880B82091BDB4E6E00CB86D8 /* DDWaterFolwView.h */,
+				880B820A1BDB4E6E00CB86D8 /* DDWaterFolwView.m */,
+				880B820C1BDB4E8D00CB86D8 /* DDWaterFlowViewCell.h */,
+				880B820D1BDB4E8D00CB86D8 /* DDWaterFlowViewCell.m */,
+			);
+			name = "WaterFull[瀑布流]";
+			path = WaterFull;
+			sourceTree = "<group>";
+		};
+		880B820F1BDB5A7F00CB86D8 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885DD9741BDB709300290790 /* UIView+Extension.m in Sources */,
 				880B81E21BDB4BB100CB86D8 /* ViewController.m in Sources */,
 				880B81DF1BDB4BB100CB86D8 /* AppDelegate.m in Sources */,
+				880B820E1BDB4E8D00CB86D8 /* DDWaterFlowViewCell.m in Sources */,
+				880B820B1BDB4E6E00CB86D8 /* DDWaterFolwView.m in Sources */,
 				880B81DC1BDB4BB100CB86D8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +384,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DDWaterFall/DDpch.pch";
 				INFOPLIST_FILE = DDWaterFall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +396,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DDWaterFall/DDpch.pch";
 				INFOPLIST_FILE = DDWaterFall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +457,7 @@
 				880B81FB1BDB4BB100CB86D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		880B81FC1BDB4BB100CB86D8 /* Build configuration list for PBXNativeTarget "DDWaterFallTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +466,7 @@
 				880B81FE1BDB4BB100CB86D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

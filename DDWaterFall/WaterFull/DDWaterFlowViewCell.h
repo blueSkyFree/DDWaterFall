@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DDWaterFlowViewCell.h
 //  DDWaterFall
 //
 //  Created by imac on 15/10/24.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface ViewController : UIViewController
 
-
+@interface DDWaterFlowViewCell : UIView
+/** 复用标识符 */
+@property (nonatomic,copy)NSString *identifier;
 
 @end
-

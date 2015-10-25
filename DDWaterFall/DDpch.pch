@@ -1,0 +1,47 @@
+//
+//  DDpch.pch
+//  test
+//
+//  Created by imac on 15/9/12.
+//  Copyright (c) 2015年 zhangdongdong. All rights reserved.
+//
+
+#ifndef test_DDpch_pch
+#define test_DDpch_pch
+
+#ifdef __OBJC__ //定义的宏只能作用在oc语言中
+#import <UIKit/UIKit.h>
+
+
+//公共的头文件，主要包含各个类的头文件
+//#import "UIView+Extension.h"
+
+
+//定义的屏幕的大小的宏 ScreenWeight 宽   ScreenHeight 高
+#define ScreenWeight  [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight  [UIScreen mainScreen].bounds.size.height
+//满屏的尺寸
+#define ViewBounds    [UIScreen mainScreen].bounds
+
+//通知
+#define DDNotificationCenter  [NSNotificationCenter defaultCenter]
+
+//颜色
+#define DDcolorWithRGB(r,g,b)   [UIColor colorWithRed:r/255.0 green:b/255.0 blue:b/255.0 alpha:1.0]
+#define DDRandomColor   [UIColor colorWithRed:arc4random_uniform(10)*0.1 green:arc4random_uniform(10)*0.1 blue:arc4random_uniform(10)*0.1 alpha:1.0]
+
+//设备的信息
+#define IOS7           [[UIDevice currentDevice].systemVersion floatValue]>7.0
+#define DeviceVersion  [[UIDevice currentDevice].systemVersion floatValue]
+
+#ifdef DEBUG // 调试阶段
+#define DDLog(...)   NSLog(@"%s %d\n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else //发布阶段
+#define DDLog(...)
+#endif
+
+#endif
+
+#endif
+
+
